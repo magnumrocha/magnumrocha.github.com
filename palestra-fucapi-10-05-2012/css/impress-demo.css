@@ -701,3 +701,22 @@ a:focus {
     Thanks for reading. I hope you enjoyed it at least as much as I enjoyed writing it
     for you.
 */
+
+.slide1-center-text {
+	text-align: center;
+	margin-top: 140px;
+}
+
+.slide1-image-to-left {
+	float: left;
+	margin-top: 150px;
+	margin-left: -60px;
+	margin-right: -50px;
+}
+
+.slide1-image-to-right {
+	float: right;
+	margin-top: 150px;
+	margin-left: -70px;
+	margin-right: -50px;
+}
