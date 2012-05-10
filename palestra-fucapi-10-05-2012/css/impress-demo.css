@@ -252,7 +252,7 @@ a:focus {
 
 #why-mobile-apps {
     padding: 0;
-    width: 1000px;
+    width: 900px;
 }
 
 #why-mobile-apps .try {
@@ -276,7 +276,7 @@ a:focus {
 	margin-left: -100px;
 	margin-right: -100px;
 
-    font-size: 110px;
+    font-size: 90px;
     
     -webkit-transform: translateZ(50px);
     -moz-transform:    translateZ(50px);
@@ -288,7 +288,7 @@ a:focus {
 #why-mobile-apps .footnote {
     font-size: 32px;
     position: absolute;
-    top: 5.5em;
+    top: 3.5em;
 	/*margin-right: -100px;*/
 }
 
