@@ -20,9 +20,6 @@ kotlin {
                     enabled.set(true)
                 }
             }
-            distribution {
-                outputDirectory.set(projectDir.resolve("public"))
-            }
         }
         binaries.executable()
     }
