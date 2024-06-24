@@ -1,0 +1,14 @@
+*.iml
+.gradle
+**/build/
+!src/**/build/
+local.properties
+**/.idea/
+package-lock.json
+.DS_Store
+captures
+.externalNativeBuild
+.cxx
+build
+.fleet/scratches
+.fleet/run.json
