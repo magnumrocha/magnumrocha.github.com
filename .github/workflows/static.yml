@@ -55,11 +55,10 @@ jobs:
         with:
           name: dist
           path: ${{ github.workspace }}
-      - name: Validate Artifacts
-        run: |
-          ls -al ${{ github.workspace }}
-          chmod -R 777 ${{ github.workspace }}
-          ls -al ${{ github.workspace }}
+      - name: Delete Artifacts
+        uses: geekyeggo/delete-artifact@v5
+        with:
+            name: dist
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
