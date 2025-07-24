@@ -71,13 +71,17 @@ private fun ProjectsSection() {
         Hr()
         H2 { Text("Check out my Work") }
         Ul(attrs = { style { property("list-style-type", "none") } }) {
-            Li {
-                A(href = "https://github.com/TM-Apps/konnection", attrs = { target(ATarget.Blank) }) {
-                    U { Text("Konnection") }
+            mapOf(
+                "Konnection" to "https://github.com/TM-Apps/konnection",
+                "State Tools" to "https://github.com/TM-Apps/state_tools"
+            ).forEach { (name, link) ->
+                Li {
+                    A(href = link, attrs = { target(ATarget.Blank) }) {
+                        U { Text(name) }
+                    }
                 }
             }
         }
-        Hr()
     }
 }
 
