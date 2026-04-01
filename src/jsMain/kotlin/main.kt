@@ -76,6 +76,11 @@ private fun ProjectsSection() {
                     U { Text("Konnection") }
                 }
             }
+            Li {
+                A(href = "https://github.com/TM-Apps/state_tools", attrs = { target(ATarget.Blank) }) {
+                    U { Text("State Tools") }
+                }
+            }
         }
         Hr()
     }
