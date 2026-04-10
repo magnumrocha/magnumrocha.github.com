@@ -1,6 +1,7 @@
 {
   "name": "static-website-builder",
   "version": "1.0.0",
+  "type": "module",
   "description": "A nodejs project that compiles and minifies web content for GitHub Pages",
   "main": "main.js",
   "scripts": {
