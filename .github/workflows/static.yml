@@ -37,10 +37,10 @@ jobs:
       - name: Build with Vite
         run: npm run build
       - name: Upload artifact
+        id: deployment
         uses: actions/upload-pages-artifact@v4
         with:
-          name: build
-          path: './dist' # upload entire repository
+          path: 'dist'
 
   deploy:
     environment:
@@ -49,21 +49,6 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - name: Download artifacts
-        uses: actions/download-artifact@v8
-        with:
-          name: build
-          path: ${{ github.workspace }}
-      - name: Delete build artifacts
-        uses: geekyeggo/delete-artifact@v6
-        with:
-          name: build
-      - name: Setup Pages
-        uses: actions/configure-pages@v6
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: ${{ github.workspace }}
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
