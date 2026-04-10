@@ -63,7 +63,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: '.'
+          path: ${{ github.workspace }}
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
