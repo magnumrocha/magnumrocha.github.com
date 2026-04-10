@@ -54,7 +54,10 @@ jobs:
         with:
           name: build
           path: ${{ github.workspace }}
-      
+      - name: Delete build artifacts
+        uses: geekyeggo/delete-artifact@v6
+        with:
+          name: build
       - name: Setup Pages
         uses: actions/configure-pages@v6
       - name: Upload artifact
