@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magnum Rocha - CV</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 40px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        main {
+            background: white;
+            max-width: 210mm;
+            width: 100%;
+            min-height: 297mm;
+            position: relative;
+            color: #333;
+            padding: 0 30px;
+        }
+
+        .cv-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 25px;
+            color: #3f424c;
+            gap: 15px;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            flex-shrink: 0;
+            max-width: 100%;
+        }
+
+        .header-middle {
+            flex-grow: 1;
+            min-width: 0;
+        }
+
+        .header-name {
+            font-size: 24pt;
+            color: #2b2a35;
+            margin: 0 0 5px 0;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: -0.5px;
+        }
+
+        .header-name strong {
+            font-weight: 800;
+        }
+
+        .personal-info-left {
+            font-size: 11pt;
+            line-height: 1.6;
+            color: #40444e;
+        }
+
+        .header-right {
+            text-align: right;
+            font-size: 10.5pt;
+            line-height: 1.6;
+            color: #40444e;
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            min-width: 0;
+        }
+
+        .social-line {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 6px;
+        }
+
+        .social-line a {
+            color: #0d5aa7;
+            text-decoration: underline;
+            overflow-wrap: anywhere;
+            word-break: break-all;
+        }
+
+        .social-icon {
+            width: 16px;
+            height: 16px;
+        }
+
+        hr.section-divider {
+            border: 0;
+            border-top: 1.5px solid #bdc9ce;
+            margin: 30px 0 25px 0;
+            width: 100%;
+        }
+
+        .section-title {
+            font-size: 16pt;
+            font-weight: 400;
+            margin-bottom: 20px;
+            color: #6f8e97;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .section-container {
+            border-left: 2px solid #bdc9ce;
+            padding-left: 20px;
+            margin-left: 5px;
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+        }
+
+        .job-title {
+            font-size: 11.5pt;
+            font-weight: 800;
+            color: #2b2a35;
+            margin-top: 0;
+            margin-bottom: 4px;
+        }
+
+        .company-line {
+            font-size: 11pt;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #2b2a35;
+        }
+
+        .job-details {
+            font-size: 10.5pt;
+            line-height: 1.6;
+            margin-bottom: 35px;
+            color: #40444e;
+            text-align: left;
+        }
+
+        .badge-img {
+            width: 100px;
+            height: 100px;
+        }
+
+        a {
+            color: #0000EE;
+            text-decoration: none;
+        }
+
+        ul {
+            margin: 5px 0;
+            padding-left: 18px;
+        }
+
+        li {
+            margin-bottom: 4px;
+        }
+
+        @media (max-width: 700px) {
+            body {
+                padding: 20px 0;
+            }
+
+            main {
+                padding: 0 20px;
+            }
+
+            .cv-header {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+                flex-wrap: nowrap;
+            }
+
+            .header-middle {
+                min-width: 0;
+            }
+
+            .profile-img {
+                margin-right: 0;
+            }
+
+            .header-right {
+                text-align: center;
+                width: 100%;
+            }
+
+            .social-line {
+                justify-content: center;
+            }
+
+            .certifications-content {
+                flex-direction: column !important;
+                gap: 20px;
+            }
+
+            .badge-img {
+                margin: 0 auto;
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header class="cv-header">
+            <img src="images/magnum.jpg" alt="Magnum Rocha" class="profile-img">
+
+            <div class="header-middle">
+                <h1 class="header-name"><strong>MAGNUM</strong> ROCHA</h1>
+                <div class="personal-info-left">
+                    Date of Birth 20 Dec 1987<br>
+                    Nationality: Brazilian
+                </div>
+            </div>
+
+            <div class="header-right">
+                Rua Isabel Matos, 111 - 5° Esq. Frente<br>
+                Alfena - 4445-253, Valongo - Portugal<br>
+                (+351) 933070518<br>
+                <a href="mailto:magnum.barbosa.rocha@gmail.com"
+                    style="color: inherit; text-decoration: none;">magnum.barbosa.rocha@gmail.com</a><br>
+                <div class="social-line">
+                    <a href="https://www.linkedin.com/in/magnumrocha/">https://www.linkedin.com/in/magnumrocha/</a>
+                    <svg class="social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-3 17H6v-9h3v9zm-1.5-10.3c-.9 0-1.5-.6-1.5-1.5s.6-1.5 1.5-1.5 1.5.6 1.5 1.5-.6 1.5-1.5 1.5zm11.5 10.3h-3v-4.5c0-1.1-.4-1.8-1.4-1.8-.8 0-1.2.5-1.4 1-.1.2-.1.5-.1.8v4.5h-3s.1-8.1 0-9h3v1.3c.4-.6 1.1-1.5 2.7-1.5 2 0 3.5 1.3 3.5 4.1v5.1z"
+                            fill="#0077b5" />
+                    </svg>
+                </div>
+                <div class="social-line">
+                    <a href="https://github.com/magnumrocha/">https://github.com/magnumrocha/</a>
+                    <svg class="social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.11.82-.26.82-.577v-2.165c-3.335.73-4.04-1.61-4.04-1.61-.545-1.39-1.33-1.76-1.33-1.76-1.09-.745.085-.73.085-.73 1.205.085 1.84 1.24 1.84 1.24 1.07 1.835 2.805 1.305 3.49.995.105-.775.415-1.305.76-1.605-2.665-.305-5.465-1.335-5.465-5.93 0-1.31.465-2.38 1.235-3.22-.125-.305-.535-1.525.115-3.175 0 0 1.005-.32 3.3 1.23.955-.265 1.98-.395 3-.4 1.02.005 2.045.135 3 .4 2.295-1.55 3.295-1.23 3.295-1.23.655 1.65.245 2.87.12 3.175.77.84 1.235 1.91 1.235 3.22 0 4.61-2.805 5.625-5.475 5.92.425.37.81 1.095.81 2.21v3.285c0 .32.215.695.825.575C20.565 21.795 24 17.31 24 12c0-6.63-5.37-12-12-12z"
+                            fill="#181717" />
+                    </svg>
+                </div>
+            </div>
+        </header>
+
+        <hr class="section-divider">
+        <section class="section-title">WORK EXPERIENCE</section>
+        <div class="section-container">
+            <section class="job-title">MOBILE DEVELOPER</section>
+            <section class="company-line">HumanIT - 16 NOV 2020 - CURRENT - Porto, Portugal</section>
+            <section class="job-details">
+                • <strong>Hexaware/Mobiquity - 01 DEZ 2022 - CURRENT - Netherlands (Remote)</strong><br>
+                Development, support and improvement of Delivery Service Apps for the Netherlands' market using a modern
+                tech stacks with Kotlin Multiplatform (KMP), Compose Multiplatform, Swift for iOS, and Web technologies
+                standards (Javascript/Typescript). Usage and optimization of Android WebView framework and iOS
+                WKWebView.
+                <br><br>
+                • <strong>Mindera - 16 NOV 2020 - 30 NOV 2022 - Ireland (Remote)</strong><br>
+                Crafting, supporting, and improvement of Apps for companies around the world using the latest tech
+                stacks on
+                Android development.
+            </section>
+
+            <section class="job-title">ANDROID DEVELOPER</section>
+            <section class="company-line">Prozis - 3 SEP 2019 - 12 NOV 2020 - Porto, Portugal</section>
+            <section class="job-details">
+                Supporting and Improvement of an Android App (in Kotlin) for the health & fitness area, named Prozis
+                GO.<br>
+                This App connects with the Prozis Digital Products like SmartScales and SmartBands.
+            </section>
+
+            <section class="job-title">ANDROID DEVELOPER</section>
+            <section class="company-line">NDrive Navigation Systems SA - 12 JUN 2017 - 18 APR 2019 - Porto, Portugal
+            </section>
+            <section class="job-details">
+                Android Developer responsible to improve and maintaining the company's products, building and developing
+                native Apps with Java and Kotlin languages, using a stack of new technologies, such as RXJava/RXKotlin,
+                Dagger 2, RxBindings, JNI, Python 3 scripting, and etc. Support and evolution of Cl environment
+                with Gitlab and Jenkins.
+            </section>
+
+            <section class="job-title">MOBILE ENGINEER</section>
+            <section class="company-line">Hiper - 6 DEC 2016 - 14 JAN 2017 - Florianópolis, Brazil</section>
+            <section class="job-details">
+                Mobile Application development for Android using Xamarin, C# and .NET framework.<br>Performing the
+                Company Products improvement and evolution, Pair Programming, and Code Review activities.
+            </section>
+
+            <section class="job-title" style="margin-top: 0;">SENIOR SYSTEMS ANALYST / TECHNICAL LEAD</section>
+            <section class="company-line">FPF Tech - 3 DEC 2012 - 20 SEP 2016 - Manaus, Brazil</section>
+            <section class="job-details">
+                Conduction of a software development team on the Android Application Development for Smartphone and
+                Tablets,
+                performing the Software Architecture Design, Team Building, Pair Programming and Code Review
+                activities.<br>Development of Tizen Mobile Applications for Samsung Z1 Devices.<br>Development
+                of Web Applications with Node.JS, Spring Boot, Spring MVC and Spring Batch.
+            </section>
+
+            <section class="job-title">ANDROID DEVELOPER LEAD</section>
+            <section class="company-line">Tap4Mobile - 13 MAR 2012 - 30 NOV 2012 - Manaus, Brazil</section>
+            <section class="job-details">
+                Conduction of a software development team (4 developers) on the Android Application Development for
+                Smartphone and Tablets, performing the Software Architecture Design, Team Building, Pair Programming and
+                Code Review activities.
+            </section>
+
+            <section class="job-title">FULL SYSTEMS ANALYST / TECHNICAL LEAD</section>
+            <section class="company-line">FPF Tech - 2 MAY 2008 - 9 MAR 2012 - Manaus, Brazil</section>
+            <section class="job-details">
+                Software Development Team Lead, performing Software Requirements Specification, Estimation, and
+                Development
+                on platforms:
+                <ul>
+                    <li>JavaSE Desktop Applications</li>
+                    <li>Python/Django Web Applications</li>
+                    <li>Mobile Application for Nokia WRT Platform (Web Runtime)</li>
+                    <li>Android Apps for v2.2 (Froyo) and v2.3 (Gingerbread)</li>
+                </ul>
+            </section>
+        </div>
+
+        <hr class="section-divider">
+        <section class="section-title">EDUCATION AND TRAINING</section>
+        <div class="section-container">
+            <section class="job-title">BACHELOR'S DEGREE IN SYSTEM ANALYSIS</section>
+            <section class="company-line">10 JAN 2006 - 30 JUN 2011 - FUCAPI (Manaus, Brazil) -
+                <a href="https://fucapi.edu.br">https://fucapi.edu.br</a>
+            </section>
+            <br>
+            <section class="job-title">INFORMATION TECHNOLOGY TECHNICIAN</section>
+            <section class="company-line" style="margin-bottom: 0;">1 FEB 2002 - 22 DEC 2004 - FNE (Manaus, Brazil) -
+                <a href="https://www.fundacaomatiasmachline.org.br/">https://www.fundacaomatiasmachline.org.br/</a>
+            </section>
+        </div>
+
+        <hr class="section-divider">
+        <section class="section-title">JOB-RELATED SKILLS</section>
+        <div class="section-container">
+            <section class="job-details" style="margin-bottom: 0;">
+                Software Development on platforms:
+                <ul>
+                    <li>Android and iOS Apps Development</li>
+                    <li>Kotlin Multiplatform Development</li>
+                    <li>Flutter Mobile App Development</li>
+                    <li>Web Frontend development with Typescript, Node.JS, CSS3, HTML5, and Javascript</li>
+                </ul>
+            </section>
+        </div>
+
+        <hr class="section-divider">
+        <section class="section-title">CERTIFICATIONS</section>
+        <div class="section-container">
+            <section class="job-details certifications-content"
+                style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0;">
+                <ul style="list-style-type: none; padding-left: 0; margin-top: 0;">
+                    <li>- Associate Android Developer - Google Certified</li>
+                    <li>- KMP Foundation 1 - LeanKanban University</li>
+                    <li>- Certified Scrum Master</li>
+                    <li>- Certified Scrum Product Owner</li>
+                    <li>- Certified Scrum Developer</li>
+                </ul>
+
+                <img src="images/Associate_Android_Developer_badge.png" alt="Google Certified Badge" class="badge-img">
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
